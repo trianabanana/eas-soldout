@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "eas-soldout",
+  "compatibility_date": "2026-07-05",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "deploy-6a498c0ddaa13f965aeb7a8d"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
