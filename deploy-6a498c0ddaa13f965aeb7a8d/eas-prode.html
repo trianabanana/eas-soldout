@@ -481,7 +481,7 @@ function renderMatches() {
   rounds.forEach(round => {
     const rMatches = matches.filter(m => m.round === round);
     if (!rMatches.length) return;
-    html += `<div class="round-label">${round === 'Octavos' ? '⚽ Octavos de Final' : round === 'Cuartos' ? '⚡ Cuartos de Final' : round === 'Semis' ? '🔥 Semifinales' : round === 'Tercer puesto' ? '🥉 Tercer Puesto' : '🏆 FINAL'}</div>`;
+    html += `<div class="round-label">${round === 'Octavos' ? 'Octavos de Final' : round === 'Cuartos' ? 'Cuartos de Final' : round === 'Semis' ? 'Semifinales' : round === 'Tercer puesto' ? 'Tercer Puesto' : 'FINAL'}</div>`;
     rMatches.forEach(m => {
       const pred = myPreds[m.id];
       const hasResult = m.result_home !== null && m.result_home !== undefined && m.result_away !== null && m.result_away !== undefined;
