@@ -101,7 +101,7 @@ nav{position:sticky;top:0;z-index:100;height:58px;padding:0 clamp(16px,4vw,36px)
 .result-final{font-family:var(--rr);font-weight:900;font-size:1.6rem;color:#fff;text-align:center;line-height:1}
 .pred-row{display:flex;align-items:center;gap:8px;margin-top:14px;padding-top:12px;border-top:1px solid var(--ln)}
 .pred-label{font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:rgba(232,238,244,.35);flex-shrink:0}
-.pred-inputs{display:flex;align-items:center;gap:6px;flex:1}
+.pred-inputs{display:flex;align-items:center;gap:6px;flex:1;justify-content:center}
 .pred-input{width:40px;height:36px;text-align:center;font-family:var(--rr);font-weight:900;font-size:1.1rem;background:rgba(232,238,244,.06);border:1px solid rgba(232,238,244,.12);border-radius:8px;color:#fff;outline:none;transition:border-color .2s}
 .pred-input:focus{border-color:var(--pk)}
 .pred-input:disabled{opacity:.35;cursor:not-allowed}
@@ -215,7 +215,7 @@ nav{position:sticky;top:0;z-index:100;height:58px;padding:0 clamp(16px,4vw,36px)
       <div class="prize-icon">🏆</div>
       <div class="prize-text">
         <h3>Premios: Entrada 5SOS Argentina + sorpresas</h3>
-        <p>Puntos: +5 si acertás el ganador · +2 por cada gol exacto</p>
+        <p>Puntos: +2 por cada gol +5 si acertás el ganador </p>
       </div>
     </div>
   </div>
@@ -511,7 +511,7 @@ function renderMatches() {
           </div>
         </div>
         ${!locked ? `
-        <div class="pred-row";style="justify-content:center>
+        <div class="pred-row">
           <span class="pred-label">Tu predicción</span>
           <div class="pred-inputs">
             <input class="pred-input" id="ph_${m.id}" type="number" min="0" max="20" value="${pred?.home ?? ''}" placeholder="—">
